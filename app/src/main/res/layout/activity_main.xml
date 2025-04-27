@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/my_first_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Code Challenge"
+        android:text="Hello Android, nice to meet you"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
