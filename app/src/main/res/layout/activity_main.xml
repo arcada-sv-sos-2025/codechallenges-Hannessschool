@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,10 +12,33 @@
         android:id="@+id/my_first_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Android, nice to meet you"
+        android:text="Min första app"
+        app:layout_constraintBottom_toTopOf="@id/calculator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultat av plussande ihop"
+        app:layout_constraintBottom_toBottomOf="@id/mean_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_first_code" />
+
+    <Button
+        android:id="@+id/mean_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultat av medelvärdesräkning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculator" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
